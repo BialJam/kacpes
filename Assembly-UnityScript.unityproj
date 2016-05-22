@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5853ED6A-05C9-0392-EC5F-D51C80DD2336}</ProjectGuid>
+    <ProjectGuid>{667707EB-67EB-939C-FAED-ACF82B7DE2EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-UnityScript</AssemblyName>
@@ -46,6 +46,58 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Water FX Pack\Scripts\ScrollUV.js" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\FluidParticleShader-Lighting.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Additive.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectPreComposite.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectMetal.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Multiply.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceMetal.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-VertexLitBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectSpecular.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Includes\FluvioCompute.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-AlphaBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceSpecular.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectComposite.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectBlur.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\FluidParticleShader-Mobile.cginc" />
+     <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\FluidEffectShadow.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Includes\FluvioLanguageSupport.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceDepth.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\FluidEffect.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\FluidParticleSystem\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Additive.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AdditiveLit.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-VertexLitBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\_Main\Fluvio.Runtime.xml" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\FluidParticleShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-AdditiveLit.shader" />
+     <None Include="Assets\New Folder\Fluvio\README.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AlphaBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-AlphaBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-Multiply.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Multiply.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-Additive.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -53,10 +105,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Cloo">
- <HintPath>C:/Users/Kacpes/Documents/BialjamGame/Assets/New Folder/Fluvio/_Main/Cloo.dll</HintPath>
+ <HintPath>C:/Users/Kacpes/Desktop/New folder/Assets/New Folder/Fluvio/_Main/Cloo.dll</HintPath>
  </Reference>
  <Reference Include="Fluvio.Runtime">
- <HintPath>C:/Users/Kacpes/Documents/BialjamGame/Assets/New Folder/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Kacpes/Desktop/New folder/Assets/New Folder/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

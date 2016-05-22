@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A245D672-01C0-E7E5-B3A8-F42891636AB1}</ProjectGuid>
+    <ProjectGuid>{266B520C-6D88-E0EB-7A02-BE2FB6176CD0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Dalej.cs" />
+     <Compile Include="Assets\Menu.cs" />
      <Compile Include="Assets\New Folder\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL10.cs" />
      <Compile Include="Assets\New Folder\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL11.cs" />
      <Compile Include="Assets\New Folder\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL12.cs" />
@@ -53,16 +55,80 @@
      <Compile Include="Assets\New Folder\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\Threading\FluvioThreadPool.cs" />
      <Compile Include="Assets\New Folder\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\SamplePlugins\FluidMixer.cs" />
      <Compile Include="Assets\New Folder\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\SamplePlugins\FluidTouch.cs" />
+     <Compile Include="Assets\Quit.cs" />
      <Compile Include="Assets\Scripts\ButtleButton.cs" />
+     <Compile Include="Assets\Scripts\Character.cs" />
+     <Compile Include="Assets\Scripts\DownButton.cs" />
+     <Compile Include="Assets\Scripts\Drunk.cs" />
+     <Compile Include="Assets\Scripts\DrunkManOnTheFloor.cs" />
+     <Compile Include="Assets\Scripts\LeftButton.cs" />
+     <Compile Include="Assets\Scripts\MoverRayCast.cs" />
+     <Compile Include="Assets\Scripts\RightButton.cs" />
      <Compile Include="Assets\Scripts\RotateBottle.cs" />
      <Compile Include="Assets\Scripts\Save.cs" />
+     <Compile Include="Assets\Scripts\UpButton.cs" />
      <Compile Include="Assets\Scripts\bzier.cs" />
-     <Compile Include="Assets\Tavern\Character.cs" />
-     <Compile Include="Assets\Tavern\DownButton.cs" />
-     <Compile Include="Assets\Tavern\LeftButton.cs" />
-     <Compile Include="Assets\Tavern\MoverRayCast.cs" />
-     <Compile Include="Assets\Tavern\RightButton.cs" />
-     <Compile Include="Assets\Tavern\UpButton.cs" />
+     <Compile Include="Assets\Scripts\resetCAmera.cs" />
+     <Compile Include="Assets\Scripts\resetPlayer.cs" />
+     <Compile Include="Assets\Scripts\śmierć.cs" />
+     <Compile Include="Assets\Start.cs" />
+     <Compile Include="Assets\Tuto.cs" />
+     <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
+     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
+     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
+     <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\FluidParticleShader-Lighting.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Additive.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectPreComposite.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectMetal.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Multiply.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceMetal.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-VertexLitBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectSpecular.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Includes\FluvioCompute.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-AlphaBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceSpecular.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectComposite.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectBlur.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\FluidParticleShader-Mobile.cginc" />
+     <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\FluidEffectShadow.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Includes\FluvioLanguageSupport.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceDepth.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\FluidEffect\FluidEffect.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\FluidParticleSystem\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Additive.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AdditiveLit.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\OpenCLShader.cl.txt" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-VertexLitBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\_Main\Fluvio.Runtime.xml" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\FluidParticleShader.cginc" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-AdditiveLit.shader" />
+     <None Include="Assets\New Folder\Fluvio\README.txt" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AlphaBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-AlphaBlended.shader" />
+     <None Include="Assets\New Folder\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.compute" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-Multiply.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Multiply.shader" />
+     <None Include="Assets\New Folder\Fluvio\Shaders\Particles\Fluvio-Particles-Additive.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -70,10 +136,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Cloo">
- <HintPath>C:/Users/Kacpes/Documents/BialjamGame/Assets/New Folder/Fluvio/_Main/Cloo.dll</HintPath>
+ <HintPath>C:/Users/Kacpes/Desktop/New folder/Assets/New Folder/Fluvio/_Main/Cloo.dll</HintPath>
  </Reference>
  <Reference Include="Fluvio.Runtime">
- <HintPath>C:/Users/Kacpes/Documents/BialjamGame/Assets/New Folder/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Kacpes/Desktop/New folder/Assets/New Folder/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

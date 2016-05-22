@@ -56,18 +56,24 @@ public class RotateBottle : MonoBehaviour {
                         EPE.emit = false;
 
                 }
-                else
-                    Application.LoadLevel("tavern");
 
-            }			
+
+                
+
+            }	
+			if (glassNumber >= Glasses.Length)
+				Application.LoadLevel("tavern");
 		} else {
 			if (bottleTurn (false)) {
 				if (Input.GetMouseButtonUp (0)) 
 				{
-					EPE.emit = false;
-					mililiters [glassNumber] = (int)(Glasses [glassNumber].localScale.y*1000);
-					ScoteTextMeches [glassNumber].text = (((100 * mililiters [glassNumber]) / mililiters [0])-100).ToString () + "%";
-					glassNumber++;
+					if (glassNumber < Glasses.Length)
+					{
+							EPE.emit = false;
+							mililiters [glassNumber] = (int)(Glasses [glassNumber].localScale.y * 1000);
+							ScoteTextMeches [glassNumber].text = (((100 * mililiters [glassNumber]) / mililiters [0]) - 100).ToString () + "%";
+							glassNumber++;
+					}
 				}
 			}
 		}
@@ -80,8 +86,8 @@ public class RotateBottle : MonoBehaviour {
 		if (direction) 
 		{
 			if (play == true && t < 1.0f) {
-				this.transform.eulerAngles = new Vector3 (t * 90, t * 15, t * 50);
 				this.transform.Translate ((Vector3.zero - this.transform.position) + getBezier ());
+				this.transform.eulerAngles = new Vector3 (t * 90, t * 15, t * 50);
 			} else
 				returned = true;
 
@@ -97,8 +103,8 @@ public class RotateBottle : MonoBehaviour {
 		{
 			if (play == true &&t<1.0f)
 			{
-				this.transform.eulerAngles = new Vector3 (t * 90, t*15, t * 50);
 				this.transform.Translate ((Vector3.zero - this.transform.position) + getBezier());
+				this.transform.eulerAngles = new Vector3 (t * 90, t*15, t * 50);
 			} else
 				returned = true;
 			if (t > 0.0f)
