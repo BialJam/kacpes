@@ -15,6 +15,8 @@ public class UpButton : MonoBehaviour {
 	
 	}
 
+	public bool forceStop=false;
+
 	public bool pressed = false;
 	public GameObject animatio;
 
@@ -29,15 +31,18 @@ public class UpButton : MonoBehaviour {
 	{
 		pressed = false;
 		animatio.GetComponent<Animation>().Play ("idle");
-
 	}
 
 	// Update is called once per frame
-	public void Update () {
+	public void FixedUpdate () {
+		if (forceStop)
+			return;
 		if ((player != null && pressed) || Input.GetKey (KeyCode.UpArrow)) {
 			if(!(rigidbody.velocity.x>maxVelocity))
 			rigidbody.AddForce (new Vector3 (0, 0, force));
-			thingToRotate.rotation = new Quaternion (0, 90, 0, 0);
+			Vector3 eA = thingToRotate.eulerAngles;
+			eA.y = 0;
+			thingToRotate.eulerAngles = eA;
 			//player.position = new Vector3 (player.position.x, player.position.y, player.position.z + 0.01f);
 			animatio.GetComponent<Animation> ().Play ("walk");
 		}

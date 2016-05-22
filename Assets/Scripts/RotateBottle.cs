@@ -38,7 +38,7 @@ public class RotateBottle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0) || Input.GetMouseButton (0)) {
+		if (Input.GetMouseButtonDown (0) || Input.GetMouseButton (0) || Input.acceleration.z >= 0.7) {
 			if (bottleTurn (true)) {
                 if (glassNumber < Glasses.Length)
                 {

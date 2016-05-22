@@ -9,7 +9,9 @@ public class Drunk : MonoBehaviour {
 
 	void Update () {
 		int i = Random.Range(0,1000);
+		float x = Random.Range (-100 , 100 );
+		float z = Random.Range (-100 , 100 );
 		if(i<(lvlOfDrunkness))
-			rid.AddForce(new Vector3(Random.Range(-500*lvlOfDrunkness,500*lvlOfDrunkness),0,Random.Range(-500*lvlOfDrunkness,500*lvlOfDrunkness)));
+			rid.AddForce(new Vector3(x*50,0,z*50));
 	}
 }

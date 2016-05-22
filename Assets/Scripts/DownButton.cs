@@ -8,6 +8,7 @@ public class DownButton : MonoBehaviour {
 	public Rigidbody rigidbody;
 	public float force = 30f;
 	public float maxVelocity = 25f;
+	public bool forceStop=false;
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +32,9 @@ public class DownButton : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	public void Update () {
+	public void FixedUpdate () {
+		if (forceStop)
+			return;
 		if ((player != null && pressed) ||Input.GetKey(KeyCode.DownArrow))
 		{
 			if(!(rigidbody.velocity.x>maxVelocity))
@@ -39,7 +42,9 @@ public class DownButton : MonoBehaviour {
 				rigidbody.AddForce (new Vector3 (0, 0, -force));
 			else
 				rigidbody.AddForce (new Vector3 (0, 0, -force));
-			thingToRotate.transform.Rotate (new Vector3(0,90,0));// = new Quaternion (0, 270, 0, 0);
+			Vector3 eA = thingToRotate.eulerAngles;
+			eA.y = 180;
+			thingToRotate.eulerAngles = eA;
 			//player.position = new Vector3 (player.position.x, player.position.y, player.position.z-0.01f);
 			animatio.GetComponent<Animation> ().Play ("walk");
 		}
